@@ -17,7 +17,7 @@ export class AppController {
   @Get('user')
   fakeLogin() {
     return {
-      token: 'fake-jwt-token',
+      token: 'product-token',
     };
   }
 
