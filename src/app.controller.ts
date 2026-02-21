@@ -14,6 +14,13 @@ export class AppController {
       .toArray();
   }
 
+  @Get('user')
+  fakeLogin() {
+    return {
+      token: 'fake-jwt-token',
+    };
+  }
+
   @Post('users')
   async createUser(@Body() body: any) {
     return this.connection
